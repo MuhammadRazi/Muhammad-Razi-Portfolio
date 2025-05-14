@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import { Tilt } from "react-tilt";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -57,7 +56,7 @@ const About = () => {
     from: { opacity: 0, x: -50 },
     to: { opacity: 1, x: 0, duration: 1, ease: "power2.out" },
   });
-
+  
   // Paragraph Animation
   useGsap(paragraphRef, {
     from: { opacity: 0, y: 50 },
